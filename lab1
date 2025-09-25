@@ -1,6 +1,6 @@
-/* используя радиус сферы и свою константу вычислить:
- 1. объем сферы
- 2. площадь сферы */
+/* ГЁГ±ГЇГ®Г«ГјГ§ГіГї Г°Г Г¤ГЁГіГ± Г±ГґГҐГ°Г» ГЁ Г±ГўГ®Гѕ ГЄГ®Г­Г±ГІГ Г­ГІГі ГўГ»Г·ГЁГ±Г«ГЁГІГј:
+ 1. Г®ГЎГєГҐГ¬ Г±ГґГҐГ°Г»
+ 2. ГЇГ«Г®Г№Г Г¤Гј Г±ГґГҐГ°Г» */
 
 #include <iostream>
 #include <locale>
@@ -9,23 +9,24 @@
 #include <typeinfo>
 using namespace std;
 
+
 int main()
 {
     setlocale(LC_ALL, "Russian"); 
-    const float n = 13.1415; // тип данных для дробной константы
+    const float n = 13.1415; // ГІГЁГЇ Г¤Г Г­Г­Г»Гµ Г¤Г«Гї Г¤Г°Г®ГЎГ­Г®Г© ГЄГ®Г­Г±ГІГ Г­ГІГ»
     int r;
-    cout << "Введите радиус: ";
+    cout << "Г‚ГўГҐГ¤ГЁГІГҐ Г°Г Г¤ГЁГіГ±: ";
     cin >> r;
     float v = (4 * n * pow(r, 3)) / 3;
     float s = 4 * n * pow(r, 2);
-    cout << "Объем = " << v<< " " << typeid(v).name() << endl;
-    cout << "Площадь = " << s << " " << typeid(v).name() << endl;
-    cout << "Мининальное значение int: " << numeric_limits<int>::min()<<endl;
-    cout << "Мининальное значение float: " << - numeric_limits<float>::max() << endl;
-    cout << "Максимальное значение int: " << numeric_limits<int>::max() << endl;
-    cout << "Максимальное значение float: " << numeric_limits<float>::max() << endl;
-    cout << "Размер int в битах " << sizeof(int) * 8<< endl;
-    cout << "Размер float в битах " << sizeof(float) * 8 << endl;
+    cout << "ГЋГЎГєГҐГ¬ = " << v<< " " << typeid(v).name() << endl;
+    cout << "ГЏГ«Г®Г№Г Г¤Гј = " << s << " " << typeid(v).name() << endl;
+    cout << "ГЊГЁГ­ГЁГ­Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ int: " << numeric_limits<int>::min()<<endl;
+    cout << "ГЊГЁГ­ГЁГ­Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ float: " << - numeric_limits<float>::max() << endl;
+    cout << "ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ int: " << numeric_limits<int>::max() << endl;
+    cout << "ГЊГ ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ float: " << numeric_limits<float>::max() << endl;
+    cout << "ГђГ Г§Г¬ГҐГ° int Гў ГЎГЁГІГ Гµ " << sizeof(int) * 8<< endl;
+    cout << "ГђГ Г§Г¬ГҐГ° float Гў ГЎГЁГІГ Гµ " << sizeof(float) * 8 << endl;
 
     return 0;
 }
