@@ -69,7 +69,7 @@ int main()
 		cout << endl;
 	}
 
-	int k = -1;
+	int k = 0;
 	int max = -1;
 
 	for (int j = 0; j < stl; ++j)
@@ -89,17 +89,18 @@ int main()
 		}
 	}
 
-	for (int j = 0; j < stl; ++j)
+	if (max >= 0)
 	{
-		if (j == max)
+		for (int i = 0; i < str; ++i)
 		{
-			for (int i = 0; i < str; ++i)
-			{
-				mtr[i][j] = -1;
-			}
-			break;
+			mtr[i][max] = -1;
 		}
 	}
+	else
+	{
+		cout << "Нет отрицательных чисел" << endl;
+	}
+
 	cout << "Итоговая матрица:" << endl;
 	for (int i = 0; i < str; ++i)
 	{
