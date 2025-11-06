@@ -1,0 +1,5 @@
+﻿  lab1_functions.cpp
+C:\Users\1387415\source\repos\lab5\lab5\lab1_functions.cpp(16,21): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\1387415\source\repos\lab5\lab5\lab1_functions.cpp(17,9): error C2082: переопределение формального параметра "r"
+C:\Users\1387415\source\repos\lab5\lab5\lab1_functions.cpp(20,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\1387415\source\repos\lab5\lab5\lab1_functions.cpp(21,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
