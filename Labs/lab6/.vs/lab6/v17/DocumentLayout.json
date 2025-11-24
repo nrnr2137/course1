@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1387415\\source\\repos\\lab6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{680DB062-18D5-4793-8CBF-33D4987B2ABC}|lab6\\lab6.vcxproj|C:\\Users\\1387415\\source\\repos\\lab6\\lab6\\lab6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{680DB062-18D5-4793-8CBF-33D4987B2ABC}|lab6\\lab6.vcxproj|solutionrelative:lab6\\lab6.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lab6.cpp",
+              "DocumentMoniker": "C:\\Users\\1387415\\source\\repos\\lab6\\lab6\\lab6.cpp",
+              "RelativeDocumentMoniker": "lab6\\lab6.cpp",
+              "ToolTip": "C:\\Users\\1387415\\source\\repos\\lab6\\lab6\\lab6.cpp",
+              "RelativeToolTip": "lab6\\lab6.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-19T22:52:47.005Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
