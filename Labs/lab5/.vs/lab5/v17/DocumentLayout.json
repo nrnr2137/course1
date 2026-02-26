@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|solutionrelative:lab5\\functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|solutionrelative:lab5\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\lab1_functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|solutionrelative:lab5\\lab1_functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|solutionrelative:lab5\\lab1_functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|solutionrelative:lab5\\functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\lab5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|solutionrelative:lab5\\lab5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{04CF76A0-1292-45BE-84A0-E1950D558570}|lab5\\lab5.vcxproj|solutionrelative:lab5\\functions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "lab5.cpp",
               "DocumentMoniker": "C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\lab5.cpp",
               "RelativeDocumentMoniker": "lab5\\lab5.cpp",
@@ -47,7 +47,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "lab1_functions.cpp",
               "DocumentMoniker": "C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\lab1_functions.cpp",
               "RelativeDocumentMoniker": "lab5\\lab1_functions.cpp",
@@ -55,12 +55,11 @@
               "RelativeToolTip": "lab5\\lab1_functions.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-06T04:53:06.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-06T04:53:06.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "lab1_functions.h",
               "DocumentMoniker": "C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\lab1_functions.h",
               "RelativeDocumentMoniker": "lab5\\lab1_functions.h",
@@ -72,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "functions.cpp",
               "DocumentMoniker": "C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\functions.cpp",
               "RelativeDocumentMoniker": "lab5\\functions.cpp",
@@ -84,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "functions.h",
               "DocumentMoniker": "C:\\Users\\1387415\\Documents\\GitHub\\course1\\Labs\\lab5\\lab5\\functions.h",
               "RelativeDocumentMoniker": "lab5\\functions.h",
@@ -92,7 +91,8 @@
               "RelativeToolTip": "lab5\\functions.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-05T23:18:17.685Z"
+              "WhenOpened": "2025-11-05T23:18:17.685Z",
+              "EditorCaption": ""
             }
           ]
         }
