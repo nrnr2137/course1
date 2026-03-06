@@ -1,7 +1,4 @@
 ﻿  book.cpp
-C:\Users\1387415\source\repos\2lab2\2lab2\book.cpp(144,41): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-C:\Users\1387415\source\repos\2lab2\2lab2\book.cpp(153,31): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\1387415\source\repos\2lab2\2lab2\book.cpp(155,37): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\1387415\source\repos\2lab2\2lab2\book.cpp(173,31): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\1387415\source\repos\2lab2\2lab2\book.cpp(175,37): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  2lab2.vcxproj -> C:\Users\1387415\source\repos\2lab2\x64\Debug\2lab2.exe
+C:\Users\1387415\source\repos\nrnr2137\course1.2\2lab2\2lab2\book.cpp(129,54): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\1387415\source\repos\nrnr2137\course1.2\2lab2\2lab2\book.cpp(133,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  2lab2.vcxproj -> C:\Users\1387415\source\repos\nrnr2137\course1.2\2lab2\x64\Debug\2lab2.exe

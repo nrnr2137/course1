@@ -17,17 +17,13 @@ private:
 public:
     // конструктор по умолчанию
     Book();
-
     // конструктор полного заполнения
     Book(string auth, vector<string> titl, int pages, double pr);
-
     // конструктор копирования
     Book(const Book& cop);
-
     // деструктор
     ~Book();
-
-    // оператор присваивания (правило трёх)
+    // (правило трёх)
     Book& operator=(const Book& other);
 
     // операторы

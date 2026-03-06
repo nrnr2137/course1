@@ -1,7 +1,8 @@
 #include "Book.h"
 #include <algorithm>
+#include <cstdlib>
+#include <ctime>
 
-// конструктор по умолчанию
 Book::Book()
 {
     author = "";
@@ -9,8 +10,6 @@ Book::Book()
     pagecount = 0;
     price = 0.0;
 }
-
-// конструктор полного заполнени€
 Book::Book(string auth, vector<string> titl, int pages, double pr)
 {
     setauthor(auth);
@@ -18,8 +17,6 @@ Book::Book(string auth, vector<string> titl, int pages, double pr)
     setpage(pages);
     setprice(pr);
 }
-
-// конструктор копировани€
 Book::Book(const Book& cop)
 {
     author = cop.author;
@@ -27,15 +24,11 @@ Book::Book(const Book& cop)
     pagecount = cop.pagecount;
     price = cop.price;
 }
-
-// деструктор
 Book::~Book()
 {
     titles.clear();
     cout << "ƒеструктор дл€ книги. јвтор: " << author << endl;
 }
-
-// оператор присваивани€ (правило трЄх)
 Book& Book::operator=(const Book& other)
 {
     if (this != &other)
@@ -47,155 +40,117 @@ Book& Book::operator=(const Book& other)
     }
     return *this;
 }
-
-// оператор + (только дл€ разных авторов)
 Book Book::operator+(const Book& other) const
 {
-    if (author == other.author)
-    {
-        cout << "ќшибка: оператор + можно использовать только дл€ книг разных авторов!" << endl;
-        cout << "¬ывод первой книги:" << endl;
-        return *this;
-    }
-
     Book result;
 
-    result.author = author + " и " + other.author;
     result.pagecount = pagecount + other.pagecount;
     result.price = (price + other.price) * 0.85;
-
     vector<string> alltitl;
 
-    for (int i = 0; i < titles.size(); i++)
+    if (author == other.author)
     {
-        string formatted = author + " " + titles[i];
-        if (find(alltitl.begin(), alltitl.end(), formatted) == alltitl.end())
+        result.author = author;
+        for (int i = 0; i < titles.size(); i++)
         {
-            alltitl.push_back(formatted);
+            alltitl.push_back(titles[i]);
         }
-    }
 
-    for (int i = 0; i < other.titles.size(); i++)
-    {
-        string formatted = other.author + " " + other.titles[i];
-        if (find(alltitl.begin(), alltitl.end(), formatted) == alltitl.end())
+        for (int i = 0; i < other.titles.size(); i++)
         {
-            alltitl.push_back(formatted);
+            if (find(alltitl.begin(), alltitl.end(), other.titles[i]) == alltitl.end())
+            {
+                alltitl.push_back(other.titles[i]);
+            }
         }
+
+    }
+    else
+    {
+        for (int i = 0; i < titles.size(); i++)
+        {
+            string at = author + " " + titles[i];
+            alltitl.push_back(at);
+        }
+
+        for (int i = 0; i < other.titles.size(); i++)
+        {
+            string at = other.author + " " + other.titles[i];
+            alltitl.push_back(at);
+        }
+        result.author = author + " и " + other.author;
     }
 
     result.titles = alltitl;
     return result;
 }
-
-// оператор += (только дл€ одного автора)
 Book& Book::operator+=(const Book& other)
 {
-    if (author != other.author)
+    pagecount = pagecount + other.pagecount;
+    price = (price + other.price) * 0.85;
+    vector<string> alltitl;
+    if (author == other.author)
     {
-        cout << "ќшибка: оператор += можно использовать только дл€ книг одного автора!" << endl;
-        return *this;
-    }
-
-    Book result;
-    result.author = author; 
-    result.pagecount = pagecount + other.pagecount;
-    result.price = (price + other.price) * 0.85;
-
-    vector<string> allWorks;
-
-    for (int i = 0; i < titles.size(); i++)
-    {
-        if (find(allWorks.begin(), allWorks.end(), titles[i]) == allWorks.end())
+        for (int i = 0; i < titles.size(); i++)
         {
-            allWorks.push_back(titles[i]);
+            alltitl.push_back(titles[i]);
+        }
+        for (int i = 0; i < other.titles.size(); i++)
+        {
+            if (find(alltitl.begin(), alltitl.end(), other.titles[i]) == alltitl.end())
+            {
+                alltitl.push_back(other.titles[i]);
+            }
         }
     }
-
-    for (int i = 0; i < other.titles.size(); i++)
+    else
     {
-        if (find(allWorks.begin(), allWorks.end(), other.titles[i]) == allWorks.end())
+        for (int i = 0; i < titles.size(); i++)
         {
-            allWorks.push_back(other.titles[i]);
+            string at = author + " " + titles[i];
+            alltitl.push_back(at);
         }
+
+        for (int i = 0; i < other.titles.size(); i++)
+        {
+            string at = other.author + " " + other.titles[i];
+            alltitl.push_back(at);
+        }
+        author = author + " и " + other.author;
     }
-
-    result.titles = allWorks;
-
-    *this = result;
+    titles = alltitl;
     return *this;
 }
 
-// оператор /
 Book Book::operator/(const Book& other) const
 {
     Book result;
 
-    if (author == other.author)
-    {
-        result.author = author;
-    }
-    else
-    {
-        result.author = author + " и " + other.author;
-    }
-
-    result.pagecount = pagecount + other.pagecount;
-    result.pagecount = result.pagecount * 0.7;
+    result.pagecount = (pagecount + other.pagecount) * 0.7;
     result.price = (price + other.price) * 1.1;
+    vector<string> alltitl;
 
-    vector<string> parttitl;
+    srand(time(0));
+    int randomCount = 3 + rand() % 4;
+    result.author = author + " и " + other.author;
 
-    if (author == other.author)
+    for (int i = 0; i < titles.size(); i++)
     {
-        int maxs;
-        if (titles.size() < other.titles.size())
-            maxs = titles.size();
-        else
-            maxs = other.titles.size();
-
-        for (int i = 0; i < maxs; i += 2)
-        {
-            if (i < titles.size() && find(parttitl.begin(), parttitl.end(), titles[i]) == parttitl.end())
-            {
-                parttitl.push_back(titles[i]);
-            }
-            if (i < other.titles.size() && find(parttitl.begin(), parttitl.end(), other.titles[i]) == parttitl.end())
-            {
-                parttitl.push_back(other.titles[i]);
-            }
-        }
+        string at = author + " " + titles[i];
+        alltitl.push_back(at);
     }
-    else
+    for (int i = 0; i < other.titles.size(); i++)
     {
-        int maxs;
-        if (titles.size() < other.titles.size())
-            maxs = titles.size();
-        else
-            maxs = other.titles.size();
-
-        for (int i = 0; i < maxs; i += 2)
-        {
-            if (i < titles.size())
-            {
-                string form = author + " " + titles[i];
-                if (find(parttitl.begin(), parttitl.end(), form) == parttitl.end())
-                {
-                    parttitl.push_back(form);
-                }
-            }
-            if (i < other.titles.size())
-            {
-                string form = other.author + other.titles[i];
-                if (find(parttitl.begin(), parttitl.end(), form) == parttitl.end())
-                {
-                    parttitl.push_back(form);
-                }
-            }
-        }
+        string at = other.author + " " + other.titles[i];
+        alltitl.push_back(at);
     }
 
-    result.titles = parttitl;
+    random_shuffle(alltitl.begin(), alltitl.end());
+
+    if (alltitl.size() > randomCount)
+        alltitl.resize(randomCount);
+
+    result.titles = alltitl;
     return result;
 }
 

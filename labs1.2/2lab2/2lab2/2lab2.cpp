@@ -12,7 +12,7 @@ int main()
     vector<string> titl1 = { "Преступление и наказание", "Белые ночи", "Бесы" };
     Book book1("Федор Достоевский", titl1, 672, 500.0);
 
-    vector<string> titl2 = { "Преступление и наказание", "Братья Карамазовы", "Записки из подполья" };
+    vector<string> titl2 = { "Бесы", "Братья Карамазовы", "Записки из подполья" };
     Book book2("Федор Достоевский", titl2, 928, 600.0);
 
     vector<string> titl3 = { "Война и мир", "Анна Каренина", "Воскресение" };
@@ -29,7 +29,7 @@ int main()
 
     // тесты
     cout << "\nТест оператора + с одним автором " << endl;
-    Book result1 = book1 + book2;  
+    Book result1 = book1 + book2;
     result1.v();
 
     cout << "\nТест оператора + с разными авторами" << endl;
@@ -37,21 +37,17 @@ int main()
     result2.v();
 
     cout << "\nТест оператора += с одним автором " << endl;
-    cout << "Изначально:" << endl;
     Book book4 = book1;
     book4 += book2;
     book4.v();
 
     cout << "\nТест оператора += с разными авторами " << endl;
-    cout << "Изначально:" << endl;
     Book book5 = book1;
-    book5.v();
     book5 += book3;
-    cout << "После попытки добавить book3 (разные авторы - не должна измениться):" << endl;
     book5.v();
 
     cout << "\nТест оператора /" << endl;
-    Book result3 = book1 / book2;
+    Book result3 = book1 / book3;
     result3.v();
 
     cout << "\nТест правила трёх" << endl;

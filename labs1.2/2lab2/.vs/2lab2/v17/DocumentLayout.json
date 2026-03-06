@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\1387415\\source\\repos\\2lab2\\",
+  "WorkspaceRootPath": "C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|solutionrelative:2lab2\\book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\2lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|solutionrelative:2lab2\\2lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|solutionrelative:2lab2\\book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|solutionrelative:2lab2\\book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\2lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C2A7F936-354A-49CC-869C-1FAFD9D7418D}|2lab2\\2lab2.vcxproj|solutionrelative:2lab2\\2lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,37 +28,37 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "book.cpp",
-              "DocumentMoniker": "C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\book.cpp",
+              "DocumentMoniker": "C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\book.cpp",
               "RelativeDocumentMoniker": "2lab2\\book.cpp",
-              "ToolTip": "C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\book.cpp",
+              "ToolTip": "C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\book.cpp",
               "RelativeToolTip": "2lab2\\book.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-25T20:58:59.492Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "book.h",
-              "DocumentMoniker": "C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\book.h",
+              "DocumentMoniker": "C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\book.h",
               "RelativeDocumentMoniker": "2lab2\\book.h",
-              "ToolTip": "C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\book.h",
+              "ToolTip": "C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\book.h",
               "RelativeToolTip": "2lab2\\book.h",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADMAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-25T20:58:37.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "2lab2.cpp",
-              "DocumentMoniker": "C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\2lab2.cpp",
+              "DocumentMoniker": "C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\2lab2.cpp",
               "RelativeDocumentMoniker": "2lab2\\2lab2.cpp",
-              "ToolTip": "C:\\Users\\1387415\\source\\repos\\2lab2\\2lab2\\2lab2.cpp",
+              "ToolTip": "C:\\Users\\1387415\\source\\repos\\nrnr2137\\course1.2\\2lab2\\2lab2\\2lab2.cpp",
               "RelativeToolTip": "2lab2\\2lab2.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-25T20:50:57.224Z",
               "EditorCaption": ""
