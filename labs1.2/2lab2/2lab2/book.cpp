@@ -53,7 +53,10 @@ Book Book::operator+(const Book& other) const
         result.author = author;
         for (int i = 0; i < titles.size(); i++)
         {
-            alltitl.push_back(titles[i]);
+            if (find(alltitl.begin(), alltitl.end(), titles[i]) == alltitl.end())
+            {
+                alltitl.push_back(titles[i]);
+            }
         }
 
         for (int i = 0; i < other.titles.size(); i++)
@@ -70,13 +73,19 @@ Book Book::operator+(const Book& other) const
         for (int i = 0; i < titles.size(); i++)
         {
             string at = author + " " + titles[i];
-            alltitl.push_back(at);
+            if (find(alltitl.begin(), alltitl.end(), at) == alltitl.end())
+            {
+                alltitl.push_back(at);
+            }
         }
 
         for (int i = 0; i < other.titles.size(); i++)
         {
             string at = other.author + " " + other.titles[i];
-            alltitl.push_back(at);
+            if (find(alltitl.begin(), alltitl.end(), at) == alltitl.end())
+            {
+                alltitl.push_back(at);
+            }
         }
         result.author = author + " è " + other.author;
     }
@@ -86,39 +95,37 @@ Book Book::operator+(const Book& other) const
 }
 Book& Book::operator+=(const Book& other)
 {
-    pagecount = pagecount + other.pagecount;
+    pagecount += other.pagecount;
     price = (price + other.price) * 0.85;
-    vector<string> alltitl;
+
     if (author == other.author)
     {
-        for (int i = 0; i < titles.size(); i++)
-        {
-            alltitl.push_back(titles[i]);
-        }
         for (int i = 0; i < other.titles.size(); i++)
         {
-            if (find(alltitl.begin(), alltitl.end(), other.titles[i]) == alltitl.end())
-            {
-                alltitl.push_back(other.titles[i]);
-            }
+            titles.push_back(other.titles[i]);
         }
+
+        sort(titles.begin(), titles.end());
+        titles.erase(unique(titles.begin(), titles.end()), titles.end());
     }
     else
     {
         for (int i = 0; i < titles.size(); i++)
         {
-            string at = author + " " + titles[i];
-            alltitl.push_back(at);
+            titles[i] = author + " " + titles[i];
         }
 
         for (int i = 0; i < other.titles.size(); i++)
         {
-            string at = other.author + " " + other.titles[i];
-            alltitl.push_back(at);
+            titles.push_back(other.author + " " + other.titles[i]);
         }
+
+        sort(titles.begin(), titles.end());
+        titles.erase(unique(titles.begin(), titles.end()), titles.end());
+
         author = author + " è " + other.author;
     }
-    titles = alltitl;
+
     return *this;
 }
 
@@ -131,25 +138,66 @@ Book Book::operator/(const Book& other) const
     vector<string> alltitl;
 
     srand(time(0));
-    int randomCount = 3 + rand() % 4;
-    result.author = author + " è " + other.author;
 
-    for (int i = 0; i < titles.size(); i++)
+    int fir = 1 + rand() % max(1, (int)titles.size());
+    int sec = 1 + rand() % max(1, (int)other.titles.size());
+
+    if (author == other.author)
     {
-        string at = author + " " + titles[i];
-        alltitl.push_back(at);
+        result.author = author;
+
+        vector<string> firtitl = titles;
+        random_shuffle(firtitl.begin(), firtitl.end());
+
+        for (int i = 0; i < fir && i < firtitl.size(); i++)
+        {
+            if (find(alltitl.begin(), alltitl.end(), firtitl[i]) == alltitl.end())
+            {
+                alltitl.push_back(firtitl[i]);
+            }
+        }
+
+        vector<string> sectitl = other.titles;
+        random_shuffle(sectitl.begin(), sectitl.end());
+
+        for (int i = 0; i < sec && i < sectitl.size(); i++)
+        {
+            if (find(alltitl.begin(), alltitl.end(), sectitl[i]) == alltitl.end())
+            {
+                alltitl.push_back(sectitl[i]);
+            }
+        }
     }
-    for (int i = 0; i < other.titles.size(); i++)
+    else
     {
-        string at = other.author + " " + other.titles[i];
-        alltitl.push_back(at);
+        result.author = author + " è " + other.author; 
+
+        vector<string> firtitl = titles;
+        random_shuffle(firtitl.begin(), firtitl.end());
+
+        for (int i = 0; i < fir && i < firtitl.size(); i++)
+        {
+            string at = author + " " + firtitl[i];
+            if (find(alltitl.begin(), alltitl.end(), at) == alltitl.end())
+            {
+                alltitl.push_back(at);
+            }
+        }
+
+        vector<string> sectitl = other.titles;
+        random_shuffle(sectitl.begin(), sectitl.end());
+
+        for (int i = 0; i < sec && i < sectitl.size(); i++)
+        {
+            string at = other.author + " " + sectitl[i];
+            if (find(alltitl.begin(), alltitl.end(), at) == alltitl.end())
+            {
+                alltitl.push_back(at);
+            }
+        }
     }
 
     random_shuffle(alltitl.begin(), alltitl.end());
-
-    if (alltitl.size() > randomCount)
-        alltitl.resize(randomCount);
-
     result.titles = alltitl;
     return result;
 }

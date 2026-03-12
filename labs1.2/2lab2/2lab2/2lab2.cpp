@@ -9,7 +9,7 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
 
-    vector<string> titl1 = { "Преступление и наказание", "Белые ночи", "Бесы" };
+    vector<string> titl1 = {"Преступление и наказание", "Белые ночи", "Бесы"};
     Book book1("Федор Достоевский", titl1, 672, 500.0);
 
     vector<string> titl2 = { "Бесы", "Братья Карамазовы", "Записки из подполья" };
@@ -46,7 +46,12 @@ int main()
     book5 += book3;
     book5.v();
 
-    cout << "\nТест оператора /" << endl;
+
+    cout << "\nТест оператора / с одним автором" << endl;
+    Book result4 = book1 / book2;
+    result4.v();
+
+    cout << "\nТест оператора / с разными авторами" << endl;
     Book result3 = book1 / book3;
     result3.v();
 
