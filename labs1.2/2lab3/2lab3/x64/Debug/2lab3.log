@@ -1,0 +1,3 @@
+﻿  Shelf.cpp
+C:\Users\1387415\source\repos\nrnr2137\course1.2\2lab3\2lab3\Shelf.cpp(112,22): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  2lab3.vcxproj -> C:\Users\1387415\source\repos\nrnr2137\course1.2\2lab3\x64\Debug\2lab3.exe
